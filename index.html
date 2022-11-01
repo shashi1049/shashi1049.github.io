@@ -1,12 +1,378 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
-    Adding Home page.
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="style.css" />
+    <script
+      src="https://kit.fontawesome.com/090d845e74.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <!-- header section -->
+    <div id="header">
+      <div class="container">
+        <nav id="navbar">
+          <a class="logo" href="#header">SR</a>
+          <i class="fa-sharp fa-solid fa-sun-bright"></i>
+          <ul id="sidemenu">
+            <li><a href="#header">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#services">Skills</a></li>
+            <li><a href="#portfolio">My Work</a></li>
+            <li><a href="#Statistics">Statistics</a></li>
+            <li><a href="#contact">Contact</a></li>
+            <li>
+              <a href="/com/Shashi-Ranjan-Resume.pdf" download>Resume</a>
+            </li>
+            <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
+          </ul>
+          <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+        </nav>
+        <div class="header-text">
+          <h1>
+            Hi, I am <br />
+            <span>Shashi Ranjan</span>
+            <br />
+          </h1>
+          <p>BACKEND JAVA DEVELOPER</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- About section -->
+    <div id="about">
+      <div class="container">
+        <div class="row">
+          <div class="about-col-1">
+            <img src="/com/Shashi-img.JPG" alt="" />
+          </div>
+          <div class="about-col-2">
+            <h1 class="sub-title">About Me</h1>
+            <p>
+              Aspiring Java Developer having a deep interest in backend
+              development, looking for a job to enhance the current skill set
+              and ready to get challanged by new things at work and keen to
+              learn new skills and technologies required for the accomplishment
+              of mutual goals.
+            </p>
+            <div class="tab-titels">
+              <p class="tab-links active-link">Education</p>
+            </div>
+            <div class="tab-contents active-tab" id="skills">
+              <ul>
+                <li>
+                  <span>Full Stack Web Development (Full time)</span> <br />
+                  Masai School, Bangalore <br />
+                  April 2022 - till data
+                </li>
+                <li>
+                  <span><b class="Tech"></b></span> <br />
+                  Dr. A.P.J. Abdul Kalam Technical University <br />
+                  2014 - 2018
+                </li>
+                <li>
+                  <span>INTERMEDIATE(12th)</span> <br />
+                  Jesus and Mary Academy <br />
+                  2014
+                </li>
+                <li>
+                  <span>SECONDARY SCHOOL(10th)</span> <br />
+                  Jesus and Mary Academy <br />
+                  2011
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Skills -->
+    <div id="services">
+      <div class="container">
+        <h1 class="sub-title">Skills</h1>
+        <div class="services-list">
+          <div>
+            <img src="/com/front-end.png" alt="" />
+            <h2>FrontEnd Development</h2>
+          </div>
+          <div>
+            <img src="/com/Backend-Developer.png" alt="" />
+            <h2>Backend Development</h2>
+          </div>
+          <div>
+            <img src="/com/DSA-MSA-Technosoft.png" alt="" />
+            <h2>Data Structures and Algorithm</h2>
+          </div>
+          <div>
+            <img src="/com/Communication-Skills-in-Everyday-Life.jpg" alt="" />
+            <h2>Communication Skills</h2>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Tech Stack -->
+    <div id="services">
+      <div class="container">
+        <h1 class="sub-title">Tech Stack</h1>
+        <div class="services-list">
+          <div>
+            <img src="/com/HTML.png" alt="" />
+            <h2>HTML</h2>
+          </div>
+          <div>
+            <img src="/com/CSS.3.svg.png" alt="" />
+            <h2>CSS</h2>
+          </div>
+          <div>
+            <img src="/com/javascript_logo.png" alt="" />
+            <h2>JAVASCRIPT</h2>
+          </div>
+          <div>
+            <img
+              src="https://www.vectorlogo.zone/logos/java/java-vertical.svg"
+              alt=""
+            />
+            <h2>JAVA</h2>
+          </div>
+          <div>
+            <img
+              src="https://www.vectorlogo.zone/logos/springio/springio-icon.svg"
+              alt=""
+            />
+            <h2>SPRING</h2>
+          </div>
+          <div>
+            <img
+              src="https://www.vectorlogo.zone/logos/mysql/mysql-official.svg"
+              alt=""
+            />
+            <h2>MYSQL</h2>
+          </div>
+          <div>
+            <img src="/com/github.png" alt="" />
+            <h2>GITHUB</h2>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Portfolio -->
+    <div id="portfolio">
+      <div class="container">
+        <h1 class="sub-title" id="Project_title">My Projects</h1>
+
+        <!-- New projects============================================================================ -->
+        <div id="project_section">
+          <!-- project 1 -->
+          <div class="project_box">
+            <div class="content_pro">
+              <h1>Lifestyle Clone</h1>
+              <p>
+                Lifestyle is India's leading fashion destination for the latest
+                trends for multiple categories including men, women and kids'
+                apparel, footwear, handbags, fashion accessories and beauty and
+                many more.
+              </p>
+              <!-- <ul>
+                <li>HTML</li>
+                <li>CSS</li>
+                <li>JavaScript</li>
+              </ul> -->
+              <div id="tech_stackforpro" class="image_pro">
+                <img src="/com/HTML.png" alt="" />
+                <img src="/com/CSS.3.svg.png" alt="" />
+                <img src="/com/javascript_logo.png" alt="" />
+              </div>
+
+              <div id="icons-pro" class="social-icons">
+                <a
+                  href="https://shimmering-vacherin-7a95eb.netlify.app/"
+                  target="_blank"
+                  ><p>Live</p>
+                </a>
+                <a
+                  href="https://github.com/Sandeeprawat313/UNIT--2-group-project-"
+                  target="_blank"
+                  ><i class="fa-brands fa-github"></i>
+                </a>
+              </div>
+            </div>
+            <div class="image_pro">
+              <img src="/com/lifestylestore.png" alt="" />
+            </div>
+          </div>
+          <!-- project 2 -->
+          <div class="project_box">
+            <div class="content_pro">
+              <h1>PharmEasy Clone</h1>
+              <p>Pharmeasy is an indian healthcare product website</p>
+              <div id="tech_stackforpro" class="image_pro">
+                <img src="/com/HTML.png" alt="" />
+                <img src="/com/CSS.3.svg.png" alt="" />
+                <img src="/com/javascript_logo.png" alt="" />
+              </div>
+              <div id="icons-pro" class="social-icons">
+                <a href="https://naive-cast-183.vercel.app/" target="_blank"
+                  ><p>Live</p>
+                </a>
+                <a
+                  href="https://github.com/spsanchore13/naive-cast-183"
+                  target="_blank"
+                  ><i class="fa-brands fa-github"></i>
+                </a>
+              </div>
+            </div>
+            <div class="image_pro">
+              <img src="/com/Screenshot (577).png" alt="" />
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Statistics section -->
+
+    <div id="Statistics">
+      <div class="container">
+        <h1 class="sub-title" id="Statis-id">Statistics</h1>
+        <div id="Sta-sections">
+          <div>
+            <h3>1200+</h3>
+            <h2>Hours</h2>
+            <p>
+              of Full Stack <br />
+              Coding
+            </p>
+          </div>
+          <div>
+            <h3 style="border: 10px solid #ff004f">300+</h3>
+            <h2>DSA</h2>
+            <p>Problems</p>
+          </div>
+          <div>
+            <h3>200+</h3>
+            <h2>Git</h2>
+            <p>Commits</p>
+          </div>
+          <div>
+            <h3 style="border: 10px solid #ff004f">10+</h3>
+            <h2>Projects</h2>
+            <p>Done</p>
+          </div>
+          <div>
+            <h3>100+</h3>
+            <h2>Hours</h2>
+            <p>
+              of Soft Skills <br />
+              Sessions
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- github-Stat -->
+
+    <div class="container">
+      <h3 id="git-h">📊 My Github Statistics</h3>
+      <div id="git-stat">
+        <p>
+          <img
+            align="center"
+            src="https://github-readme-stats.vercel.app/api/top-langs?username=shashi1049&show_icons=true&locale=en&layout=compact"
+            alt="shashi1049"
+          />
+        </p>
+
+        <p>
+          &nbsp;<img
+            align="center"
+            src="https://github-readme-stats.vercel.app/api?username=shashi1049&show_icons=true&locale=en"
+            alt="shashi1049"
+          />
+        </p>
+      </div>
+    </div>
+
+    <!-- github-Calander -->
+    <div class="container">
+      <div id="git-calander">
+        <h3>My Github Calendar</h3>
+        <link
+          rel="stylesheet"
+          href="https://unpkg.com/github-calendar@latest/dist/github-calendar-responsive.css"
+        />
+        <div class="calendar"></div>
+      </div>
+    </div>
+
+    <!-- contact us -->
+    <div id="contact">
+      <div class="container">
+        <div class="row">
+          <div class="contact-left">
+            <h1 class="sub-title">Contact Me</h1>
+            <p><i class="fas fa-paper-plane"></i>shashi290396@gmail.com</p>
+            <p><i class="fa-solid fa-phone"></i>+91 - 8804764407</p>
+            <div class="social-icons">
+              <a href="https://github.com/shashi1049"
+                ><i class="fa-brands fa-github"></i>
+              </a>
+              <a href="https://www.linkedin.com/in/shashi1049/"
+                ><i class="fa-brands fa-linkedin"></i>
+              </a>
+            </div>
+
+            <a href="/com/Shashi-Ranjan-Resume.pdf" download class="btn btn2"
+              >Resume</a
+            >
+          </div>
+          <div class="contact-right">
+            <form name="submit-to-google-sheet">
+              <input type="text" name="Name" placeholder="Your Name" required />
+              <input
+                type="email"
+                name="Email"
+                placeholder="Your email"
+                required
+              />
+              <textarea
+                name="Message"
+                rows="6"
+                placeholder="Your Message"
+              ></textarea>
+              <button type="submit" class="btn btn2">Submit</button>
+            </form>
+            <span id="msg"> </span>
+          </div>
+        </div>
+      </div>
+      <div class="copyright">
+        <!-- <p>copyright@ Shashi ............</p> -->
+      </div>
+    </div>
+
+    <!-- backtotop -->
+    <a href="#top" class="back-to-top" title="Back to Top">
+      <img
+        src="/com/arrow-up-44.png"
+        alt="Back to Top"
+        class="back-to-top__image"
+      />
+    </a>
+  </body>
 </html>
+<script src="script.js"></script>
+<!-- Include the library. -->
+<script src="https://unpkg.com/github-calendar@latest/dist/github-calendar.min.js"></script>
+<script>
+  GitHubCalendar(".calendar", "shashi1049");
+  // or enable responsive functionality
+  GitHubCalendar(".calendar", "shashi1049", { responsive: true });
+</script>
