@@ -1,378 +1,596 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" dir="ltr">
   <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Portfolio</title>
-    <link rel="stylesheet" href="style.css" />
-    <script
-      src="https://kit.fontawesome.com/090d845e74.js"
-      crossorigin="anonymous"
-    ></script>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shashi Portfolio Website</title>
+    <link rel="stylesheet" href="css/swiper-bundle.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+
+    <link rel="stylesheet"
+   href="https://unpkg.com/github-calendar@latest/dist/github-calendar-responsive.css"
+    />
   </head>
   <body>
-    <!-- header section -->
-    <div id="header">
-      <div class="container">
-        <nav id="navbar">
-          <a class="logo" href="#header">SR</a>
-          <i class="fa-sharp fa-solid fa-sun-bright"></i>
-          <ul id="sidemenu">
-            <li><a href="#header">Home</a></li>
-            <li><a href="#about">About</a></li>
-            <li><a href="#services">Skills</a></li>
-            <li><a href="#portfolio">My Work</a></li>
-            <li><a href="#Statistics">Statistics</a></li>
-            <li><a href="#contact">Contact</a></li>
-            <li>
-              <a href="/com/Shashi-Ranjan-Resume.pdf" download>Resume</a>
-            </li>
-            <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
-          </ul>
-          <i class="fa-solid fa-bars" onclick="openmenu()"></i>
-        </nav>
-        <div class="header-text">
-          <h1>
-            Hi, I am <br />
-            <span>Shashi Ranjan</span>
-            <br />
-          </h1>
-          <p>BACKEND JAVA DEVELOPER</p>
-        </div>
-      </div>
+
+    <!--=======Scroll to top button=======-->
+    <div class="scrollToTop-btn flex-center">
+      <i class="fas fa-arrow-up"></i>        
     </div>
 
-    <!-- About section -->
-    <div id="about">
-      <div class="container">
-        <div class="row">
-          <div class="about-col-1">
-            <img src="/com/Shashi-img.JPG" alt="" />
+    <!--=======Light/Dark theme button=======-->
+
+    <!--=======Header=======-->
+<header>
+  <div class="nav-bar">
+<a href="#" class="logo">Shashi</a>
+<div class="navigation">
+  <div class="nav-items">
+    <div class="nav-close-btn"></div>
+    <a class="active" href="#home"  >Home</a>
+    <a href="#about">About</a>
+    <a href="#skills">Skills</a>
+    <!-- <a href="#My-project">Services</a> -->
+    <a href="#portfolio">Projects</a>
+    <a href="#contact">Contact</a>
+    <a href="images/fw19_0771-Shashi-Ranjan-Resume.pdf" download="fw19_0771-Shashi-Ranjan-Resume" onclick=" window.open('https://drive.google.com/file/d/1EZ5BibUV0uXaLhES3Sw6MJ87GJKOI2wy/view?usp=share_link','_blank')"> Resume <i class="fas fa-download"></i></a>
+  </div>
+</div>
+<div class="nav-menu-btn"></div>
+  </div>
+</header>
+    <!--=======Home section=======-->
+
+    <section class="home flex-center" id="home">
+      <div class="home-container">
+        <div class="media-icons">
+          <a href="https://github.com/shashi1049" target="_blank"><i class="fa-brands fa-github"></i></a>
+          <a href="https://www.linkedin.com/in/shashi1049/" target="_blank"><i class="fa-brands fa-linkedin-in"></i></a>
+          
+        </div>
+        <div class="info">
+          <h2>Hi, I am Shashi</h2>
+          <h3>Java Backend Developer</h3>
+          <p> Aspiring Java Developer having a deep interest in backend development, looking for a job to enhance the current skill set and ready to get challanged by new things at work and keen to learn new skills and technologies required for the accomplishment of mutual goals.</p>
+          <a href="#contact" class="btn">Contact me <i class="fas fa-arrow-circle-right"></i> </a>
+        </div>
+        <div class="home-img">
+           <img src="images/Shashi.JPG" alt="" >
+        </div>
+      </div>
+      <a href="#about" class="scroll-down">Scroll Down <i class="fas fa-arrow-down"></i> </a>
+    </section>
+
+    <!--=======About section=======-->
+<section class="about section" id="about">
+  <div class="container flex-center">
+    <h1 class="section-title-01">About Me</h1>
+    <h2 class="section-title-02">About Me</h2>
+    <div class="content flex-center">
+      <div class="about-img">
+        <img src="images/port-img2.jpg" alt="" >
+      </div>
+      <div class="about-info">
+        <div class="description">
+          <h3>I'm Shashi</h3>
+            <h4>A Java <span>Backend Developer</span></h4>
+            <p>software Developer with a passion for developing innovative programs that
+
+              expedite the efficiency and effectiveness of organizational success. Well-
+              versed in technology and writing code to create reliable and user-friendly
+
+              systems. Confident communicator, strategic thinker, and innovative creator
+              to develop software that is customized to meet a company's organizational
+              needs, highlight its core competencies, and further its success.</p>
+        </div>
+       
+    <!-- <a href="" class="btn"> Download CV <i class="fas fa-download"></i></a> -->
+    <a href="images/fw19_0771-Shashi-Ranjan-Resume.pdf" download="fw19_0771-Shashi-Ranjan-Resume" class="btn" onclick=" window.open('https://drive.google.com/file/d/1EZ5BibUV0uXaLhES3Sw6MJ87GJKOI2wy/view?usp=share_link','_blank')"> Download RESUME <i class="fas fa-download"></i></a>
+      </div>
+    </div>
+  </div>
+</section>
+
+    <!--=======Skills section=======-->
+     <section class="skills section" id="skills">
+      <div class="container flex-center">
+        <h1 class="section-title-01">Skills</h1>
+        <h2 class="section-title-02">Skills</h2>
+        <div class="content">
+          <div class="skills-description">
+            <h3>Education & Skills</h3>
+            <p></p>
           </div>
-          <div class="about-col-2">
-            <h1 class="sub-title">About Me</h1>
-            <p>
-              Aspiring Java Developer having a deep interest in backend
-              development, looking for a job to enhance the current skill set
-              and ready to get challanged by new things at work and keen to
-              learn new skills and technologies required for the accomplishment
-              of mutual goals.
-            </p>
-            <div class="tab-titels">
-              <p class="tab-links active-link">Education</p>
-            </div>
-            <div class="tab-contents active-tab" id="skills">
-              <ul>
-                <li>
-                  <span>Full Stack Web Development (Full time)</span> <br />
-                  Masai School, Bangalore <br />
-                  April 2022 - till data
+          <div class="skills-info  education-all">
+           
+            <div class="education">
+              <h4><label>Tech Stack</label></h4>
+              <ul class="bars">
+                <li class="bar">
+                  <div class="info">
+                    <span>HTML</span>
+                    <img src="images/html.png" alt="">
+                  </div>
                 </li>
-                <li>
-                  <span><b class="Tech"></b></span> <br />
-                  Dr. A.P.J. Abdul Kalam Technical University <br />
-                  2014 - 2018
+                <li class="bar">
+                  <div class="info">
+                    <span>CSS</span>
+                    
+                    <img src="images/css.png" alt="">
+                  </div>
+                  
                 </li>
-                <li>
-                  <span>INTERMEDIATE(12th)</span> <br />
-                  Jesus and Mary Academy <br />
-                  2014
+                <li class="bar">
+                  <div class="info">
+                    <span>Javascript</span>
+                    
+                    <img src="images/JS.png" alt="">
+                  </div>
+                  
                 </li>
-                <li>
-                  <span>SECONDARY SCHOOL(10th)</span> <br />
-                  Jesus and Mary Academy <br />
-                  2011
+                <li class="bar">
+                  <div class="info">
+                    <span>Java</span>
+                    
+                    <img src="images/Java.png" alt="">
+                  </div>
+                  
+                </li>
+                <li class="bar">
+                  <div class="info">
+                    <span>Spring Boot</span>
+                    
+                    <img width="50px" src="images/Spring Boot.png" alt="">
+                  </div>
+                  
                 </li>
               </ul>
             </div>
-          </div>
-        </div>
-      </div>
-    </div>
 
-    <!-- Skills -->
-    <div id="services">
-      <div class="container">
-        <h1 class="sub-title">Skills</h1>
-        <div class="services-list">
-          <div>
-            <img src="/com/front-end.png" alt="" />
-            <h2>FrontEnd Development</h2>
-          </div>
-          <div>
-            <img src="/com/Backend-Developer.png" alt="" />
-            <h2>Backend Development</h2>
-          </div>
-          <div>
-            <img src="/com/DSA-MSA-Technosoft.png" alt="" />
-            <h2>Data Structures and Algorithm</h2>
-          </div>
-          <div>
-            <img src="/com/Communication-Skills-in-Everyday-Life.jpg" alt="" />
-            <h2>Communication Skills</h2>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <!-- Tech Stack -->
-    <div id="services">
-      <div class="container">
-        <h1 class="sub-title">Tech Stack</h1>
-        <div class="services-list">
-          <div>
-            <img src="/com/HTML.png" alt="" />
-            <h2>HTML</h2>
-          </div>
-          <div>
-            <img src="/com/CSS.3.svg.png" alt="" />
-            <h2>CSS</h2>
-          </div>
-          <div>
-            <img src="/com/javascript_logo.png" alt="" />
-            <h2>JAVASCRIPT</h2>
-          </div>
-          <div>
-            <img
-              src="https://www.vectorlogo.zone/logos/java/java-vertical.svg"
-              alt=""
-            />
-            <h2>JAVA</h2>
-          </div>
-          <div>
-            <img
-              src="https://www.vectorlogo.zone/logos/springio/springio-icon.svg"
-              alt=""
-            />
-            <h2>SPRING</h2>
-          </div>
-          <div>
-            <img
-              src="https://www.vectorlogo.zone/logos/mysql/mysql-official.svg"
-              alt=""
-            />
-            <h2>MYSQL</h2>
-          </div>
-          <div>
-            <img src="/com/github.png" alt="" />
-            <h2>GITHUB</h2>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <!-- Portfolio -->
-    <div id="portfolio">
-      <div class="container">
-        <h1 class="sub-title" id="Project_title">My Projects</h1>
-
-        <!-- New projects============================================================================ -->
-        <div id="project_section">
-          <!-- project 1 -->
-          <div class="project_box">
-            <div class="content_pro">
-              <h1>Lifestyle Clone</h1>
-              <p>
-                Lifestyle is India's leading fashion destination for the latest
-                trends for multiple categories including men, women and kids'
-                apparel, footwear, handbags, fashion accessories and beauty and
-                many more.
-              </p>
-              <!-- <ul>
-                <li>HTML</li>
-                <li>CSS</li>
-                <li>JavaScript</li>
-              </ul> -->
-              <div id="tech_stackforpro" class="image_pro">
-                <img src="/com/HTML.png" alt="" />
-                <img src="/com/CSS.3.svg.png" alt="" />
-                <img src="/com/javascript_logo.png" alt="" />
-              </div>
-
-              <div id="icons-pro" class="social-icons">
-                <a
-                  href="https://shimmering-vacherin-7a95eb.netlify.app/"
-                  target="_blank"
-                  ><p>Live</p>
-                </a>
-                <a
-                  href="https://github.com/Sandeeprawat313/UNIT--2-group-project-"
-                  target="_blank"
-                  ><i class="fa-brands fa-github"></i>
-                </a>
-              </div>
+            <div class="education">
+              <h4><label>Tools</label></h4>
+                <li class="bar">
+                  <div class="info">
+                    <span>MySQL</span>
+                    
+                    <img src="images/mysql.png" alt="">
+                  </div>
+                  
+                </li>
+                <li class="bar">
+                  <div class="info">
+                    <span>GitHub</span>
+                    
+                    <img src="images/Git Hub.png" alt="">
+                  </div>
+                  
+                </li>
+                <li class="bar">
+                  <div class="info">
+                    <span>VS Code</span>
+                    
+                    <img src="images/VS Code.png" alt="">
+                  </div>
+                 
+                </li>
+                <li class="bar">
+                  <div class="info">
+                    <span>Git</span>
+                    
+                    <img src="images/icons8-git-48.png" alt="">
+                  </div>
+                  
+                </li>
+                <li class="bar">
+                  <div class="info">
+                    <span>Spring Tool</span>
+                    
+                    <img style="width: 60px;" src="images/spring tool.png" alt="">
+                  </div>
+                  
+                </li>
+                
+              </ul>
             </div>
-            <div class="image_pro">
-              <img src="/com/lifestylestore.png" alt="" />
+
+
+            <div class="education">
+              <h4><label>Soft-Skills</label></h4>
+              <ul class="bars">
+                <li class="bar">
+                  <div class="info">
+                    <span>Communication</span>
+                    
+                  </div>
+                  
+                </li>
+                <li class="bar">
+                  <div class="info">
+                    <span>Creativity</span>
+                    
+                  </div>
+                  
+                </li>
+                <li class="bar">
+                  <div class="info">
+                    <span>Problem Solving</span>
+                    
+                  </div>
+                  
+                </li>
+                <li class="bar">
+                  <div class="info">
+                    <span>Resourcefulness</span>
+                    
+                  </div>
+                  
+                </li>
+                <li class="bar">
+                  <div class="info">
+                    <span>Interest in Helping Others</span>
+                    
+                  </div>
+                  
+                </li>
+                <li class="bar">
+                  <div class="info">
+                    <span>Analytical Abilities</span>
+                    
+                  </div>
+                  
+                </li>
+              </ul>
             </div>
+            
           </div>
-          <!-- project 2 -->
-          <div class="project_box">
-            <div class="content_pro">
-              <h1>PharmEasy Clone</h1>
-              <p>Pharmeasy is an indian healthcare product website</p>
-              <div id="tech_stackforpro" class="image_pro">
-                <img src="/com/HTML.png" alt="" />
-                <img src="/com/CSS.3.svg.png" alt="" />
-                <img src="/com/javascript_logo.png" alt="" />
-              </div>
-              <div id="icons-pro" class="social-icons">
-                <a href="https://naive-cast-183.vercel.app/" target="_blank"
-                  ><p>Live</p>
-                </a>
-                <a
-                  href="https://github.com/spsanchore13/naive-cast-183"
-                  target="_blank"
-                  ><i class="fa-brands fa-github"></i>
-                </a>
-              </div>
-            </div>
-            <div class="image_pro">
-              <img src="/com/Screenshot (577).png" alt="" />
-            </div>
-          </div>
+         
         </div>
       </div>
-    </div>
+     </section>
+    <!--=======Github section=======-->
 
-    <!-- Statistics section -->
-
-    <div id="Statistics">
-      <div class="container">
-        <h1 class="sub-title" id="Statis-id">Statistics</h1>
-        <div id="Sta-sections">
-          <div>
-            <h3>1200+</h3>
-            <h2>Hours</h2>
-            <p>
-              of Full Stack <br />
-              Coding
-            </p>
-          </div>
-          <div>
-            <h3 style="border: 10px solid #ff004f">300+</h3>
-            <h2>DSA</h2>
-            <p>Problems</p>
-          </div>
-          <div>
-            <h3>200+</h3>
-            <h2>Git</h2>
-            <p>Commits</p>
-          </div>
-          <div>
-            <h3 style="border: 10px solid #ff004f">10+</h3>
-            <h2>Projects</h2>
-            <p>Done</p>
-          </div>
-          <div>
-            <h3>100+</h3>
-            <h2>Hours</h2>
-            <p>
-              of Soft Skills <br />
-              Sessions
-            </p>
-          </div>
+    <section class="skills section" id="skills">
+      <div class="container flex-center">
+      <h1 class="section-title-01">GitHub</h1>
+        <h2 class="section-title-02">Calender</h2>
         </div>
-      </div>
-    </div>
 
-    <!-- github-Stat -->
-
-    <div class="container">
-      <h3 id="git-h">📊 My Github Statistics</h3>
-      <div id="git-stat">
-        <p>
-          <img
-            align="center"
-            src="https://github-readme-stats.vercel.app/api/top-langs?username=shashi1049&show_icons=true&locale=en&layout=compact"
-            alt="shashi1049"
-          />
-        </p>
-
-        <p>
-          &nbsp;<img
-            align="center"
-            src="https://github-readme-stats.vercel.app/api?username=shashi1049&show_icons=true&locale=en"
-            alt="shashi1049"
-          />
-        </p>
-      </div>
-    </div>
-
-    <!-- github-Calander -->
-    <div class="container">
-      <div id="git-calander">
-        <h3>My Github Calendar</h3>
-        <link
+        <div class="calendar" >
+          <!-- Loading stuff -->
+          Loading the data just for you.
+          <link
           rel="stylesheet"
           href="https://unpkg.com/github-calendar@latest/dist/github-calendar-responsive.css"
         />
-        <div class="calendar"></div>
-      </div>
-    </div>
-
-    <!-- contact us -->
-    <div id="contact">
-      <div class="container">
-        <div class="row">
-          <div class="contact-left">
-            <h1 class="sub-title">Contact Me</h1>
-            <p><i class="fas fa-paper-plane"></i>shashi290396@gmail.com</p>
-            <p><i class="fa-solid fa-phone"></i>+91 - 8804764407</p>
-            <div class="social-icons">
-              <a href="https://github.com/shashi1049"
-                ><i class="fa-brands fa-github"></i>
-              </a>
-              <a href="https://www.linkedin.com/in/shashi1049/"
-                ><i class="fa-brands fa-linkedin"></i>
-              </a>
-            </div>
-
-            <a href="/com/Shashi-Ranjan-Resume.pdf" download class="btn btn2"
-              >Resume</a
-            >
           </div>
-          <div class="contact-right">
-            <form name="submit-to-google-sheet">
-              <input type="text" name="Name" placeholder="Your Name" required />
-              <input
-                type="email"
-                name="Email"
-                placeholder="Your email"
-                required
-              />
-              <textarea
-                name="Message"
-                rows="6"
-                placeholder="Your Message"
-              ></textarea>
-              <button type="submit" class="btn btn2">Submit</button>
-            </form>
-            <span id="msg"> </span>
+          
+      </section>
+
+      <section class="skills section" id="skills">
+        <div class="container flex-center">
+        <h1 class="section-title-01">GitHub</h1>
+          <h2 class="section-title-02">Stats</h2>
+        </div>
+        
+        <div align="center" >
+          <img class="measure" align="center" src="https://github-readme-stats.vercel.app/api?username=shashi1049&count_private=true&show_icons=true&bg_color=FFFFFF&text_color=3b7087&icon_color=3b7087&title_color=3b7087&hide_border=false"/>
+           <img class="measure" align="center" src="https://github-readme-stats.vercel.app/api/top-langs/?username=shashi1049&count_private=true&show_icons=true&bg_color=FFFFFF&text_color=3b7087&icon_color=3b7087&title_color=3b7087&hide_border=false"/>
+        </div>
+            
+      </section>
+
+
+
+      <!--======= Service Clients=======-->
+
+      <section class="services section" id="services">
+        <div class="container flex-center">
+          <h1 class="section-title-01">My Statistics</h1>
+          <h2 class="section-title-02">My Statistics</h2>
+          <div class="content">
+            <div class="services-description">
+              <h3>What I Did</h3>
+              <!-- <h3>What I Achieve</h3> -->
+            </div>
+            <ul class="service-list">
+              <li class="service-container">
+                <div class="service-card">
+                  <i class="fa-solid fa-code"></i>
+                  <h3>1200+</h3>
+                  <h3>Hours Of Coding</h3>
+                </div>
+              </li>
+               <li class="service-container">
+                <div class="service-card">
+                  <i class="fa-solid fa-code"></i>
+                  <h3>600+</h3>
+                  <h3>Hours Of DSA</h3>
+                </div>
+              </li>
+    
+              <li class="service-container">
+                <div class="service-card">
+                  <i class="fa-solid fa-code"></i>
+                  <h3>4+</h3>
+                  <h3>Mini Projects</h3>
+                </div>
+              </li>
+              <li class="service-container">
+                <div class="service-card">
+                  <i class="fa-solid fa-code"></i>
+                  <h3>6+</h3>
+                  <h3>Months Of Power Skills</h3>
+                </div>
+              </li>
+              
+            </ul>
+          </div>
+        </div>
+      </section>
+    
+
+
+
+
+
+    <!--=======Portfolio section=======-->
+
+    <section class="portfolio section" id="portfolio">
+      <div class="our-client sub-section"> 
+        <div class="container flex-center">
+          <h1 class="section-title-01">My Projects</h1>
+          <h2 class="section-title-02">My Projects</h2>
+          <div class="content">
+            <div class="swiper client-swiper">
+              <div >  
+                <!-- class="swiper-wrapper" -->
+                <!-- Project 1 -->
+                <div class="swiper-slide flex-center" style="border:1px solid #3b7087 ; margin-bottom: 60px; box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px; padding: 20px;">
+                  <div class="client-img">
+                    
+                    <img src="/images/lifestylestore.png" alt="">
+                  </div>
+                  <div style="display: grid;" class="client-details">
+                    <h3>Lifestyle Clone</h3>
+                    <p>Lifestyle is India's leading fashion destination for the latest
+                      trends for multiple categories including men, women and kids'
+                      apparel, footwear, handbags, fashion accessories and beauty and
+                      many more.</p>
+                     
+                    <span>Tech-Stack -  CSS | HTML | JAVASCRIPT</span>
+                    
+                    
+                    <h5><span class="hei">Features</span></h5>
+                    <span>- Account Login.</span>
+                    <span>- Product according to categories.</span>
+                    <span>- Add to cart, buy and payment.</span>
+                    <p></p>
+                    <h5 ><span class="hei">Areas of Responsibility</span></h5>
+                    <span>- Sign-Up</span>
+                    <span>- Sign-In</span>
+                    <p></p>
+
+                    <div class="pro-icon">
+                      <a href="https://github.com/Sandeeprawat313/Lifestyle-Clone" target="_blank" ><img src="images/icons8-github-96.png" style="width: 50px;" alt=""></a>
+                    <a href="https://shimmering-vacherin-7a95eb.netlify.app/" target="_blank" ><img src="images/web.png" style="width: 98px; width: 45px;" alt=""></a>
+
+                    </div>
+                    
+                    
+                  </div>
+                </div>
+                  <!-- Base seaction -->
+                  <!-- 2 project -->
+                  <div class="swiper-slide flex-center" style="border:1px solid #3b7087 ; margin-bottom: 60px; box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px; padding: 20px;">
+                    <div class="client-img">
+                      <img src="images/pharmEasy.png" alt="">
+                      
+                    </div>
+                    <div style="display: grid;" class="client-details">
+                      <h3>PharmEasy Clone</h3> 
+                      <p>PharmEasy is an Indian e-pharmacy company that sells medicines, diagnostics and telehealth online.</p>
+                      
+                      <span>Tech-Stack -  CSS | HTML | JAVASCRIPT</span>
+                      
+                      <p></p>
+                      
+                      <h5><span class="hei">Features</span></h5>
+                      <span>- Complete E-commerce store.</span>
+                      <span>- Add to cart</span>
+                      <span>- Buy and payment</span>
+                      
+                      <p></p>
+                      <h5 ><span class="hei">Areas of Responsibility</span></h5>
+                      <span>- Created cart</span>
+                      <span>- Created the complete payment process after selecting the product.</span>
+                      <p></p>
+    
+                      <div class="pro-icon">
+                        <a href="https://github.com/spsanchore13/naive-cast-183" target="_blank" ><img src="images/icons8-github-96.png" style="width: 50px;" alt=""></a>
+                      <a href="https://naive-cast-183.vercel.app/" target="_blank" ><img src="images/web.png" style="width: 98px; width: 45px;" alt=""></a>
+    
+                      </div>
+                      
+                      
+                    </div>
+                  </div>
+
+                  <!-- 3 project -->
+
+                  <div class="swiper-slide flex-center" style="border:1px solid #3b7087 ; margin-bottom: 60px; box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px; padding: 20px;">
+                    <div class="client-img">
+                      <img src="images/onlineBusAdda.jpeg" alt="">
+                      
+                    </div>
+                    <div style="display: grid;" class="client-details">
+                      <h3>Online Bus Adda</h3> 
+                      <p>Online Bus Adda is a bus reservation app where you can book a bus for each and every location as per your needs. also check buses details and admin can add, update bus details.</p>
+                      
+                      <span>Tech-Stack -  Java | MySQL | Spring Boot | Hibernate | Lombok | Swagger | Postman</span>
+                      
+                      <p></p>
+                      
+                      <h5><span class="hei">Features</span></h5>
+                      <span>- On-Board Registration.</span>
+                      <span>- Details Modification.</span>
+                      <span>- Easy access through API.</span>
+                      <span>- Manage through date.</span>
+                      <p></p>
+                      <h5 ><span class="hei">Areas of Responsibility</span></h5>
+                      <span>- Created User Module.</span>
+                      <span>- Created five APIs.</span>
+                      <p></p>
+    
+                      <div class="pro-icon">
+                        <a href="https://github.com/rahulrathore2110/Online-bus-adda" target="_blank" ><img src="images/icons8-github-96.png" style="width: 50px;" alt=""></a>
+                      <a href="https://drive.google.com/file/d/1MNPlzSNh3XubVO9n8_Ajd-Snym-uIvqY/view?usp=sharing" target="_blank" ><img src="images/video logo.jpg" style="width: 98px; width: 45px;" alt=""></a>
+    
+                      </div>
+                      
+                      
+                    </div>
+                  </div>
+
+                  <!-- 4 project -->
+
+                  <div class="swiper-slide flex-center" style="border:1px solid #3b7087 ; margin-bottom: 60px; box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px; padding: 20px;">
+                    <div class="client-img">
+                      <img src="images/EvergreenEscape.jpeg" alt="">
+                      
+                    </div>
+                    <div style="display: grid;" class="client-details">
+                      <h3>Online Trip management System</h3> 
+                      <p>Online Trip Management System App where admin can add packages, route, buses and hotel and users can book packages according to theire needs and also can write feedback.</p>
+                      
+                      <span>Tech-Stack -  Java | MySQL | Spring Boot | Hibernate | Lombok | Swagger | Postman</span>
+                      
+                      <p></p>
+                      
+                      <h5><span class="hei">Features</span></h5>
+                      <span>- On-Board Registration.</span>
+                      <span>- Details Modification.</span>
+                      <span>- Easy access through API.</span>
+                      <span>- Manage through date.</span>
+                      <p></p>
+                      <h5 ><span class="hei">Areas of Responsibility</span></h5>
+                      <span>- Created Package Handlers</span>
+                      <span>- Created Booking Handlers</span>
+                      <p></p>
+    
+                      <div class="pro-icon">
+                        <a href="https://github.com/CharithGR/plastic-trucks-8734" target="_blank" ><img src="images/icons8-github-96.png" style="width: 50px;" alt=""></a>
+                      <a href="https://drive.google.com/file/d/1TuirpHEeD--49e0D9NsED33athQEuvLK/view?usp=share_link" target="_blank" ><img src="images/video logo.jpg" style="width: 98px; width: 45px;" alt=""></a>
+    
+                      </div>
+                      
+                      
+                    </div>
+                  </div>
+
+
+
+              </div>
+              
+              <div class="swiper-pagination"></div>
+            </div>
           </div>
         </div>
       </div>
-      <div class="copyright">
-        <!-- <p>copyright@ Shashi ............</p> -->
-      </div>
-    </div>
 
-    <!-- backtotop -->
-    <a href="#top" class="back-to-top" title="Back to Top">
-      <img
-        src="/com/arrow-up-44.png"
-        alt="Back to Top"
-        class="back-to-top__image"
-      />
-    </a>
+    </section>
+    
+      <!--=======Get-in-touct=======-->
+      
+      
+
+
+     <!--=======Contact section=======-->
+     <section class="contact section" id="contact">
+      <div class="container flex-center">
+        <h1 class="section-title-01">Contact Me</h1>
+        <h2 class="section-title-02">Contact Me</h2>
+        <div class="content">
+          <div class="contact-left">
+            <h2>Let's discuss</h2>
+            <ul class="contact-list"> 
+              <li>
+                <h3 class="item-title"><i class="fas fa-phone"></i>Phone</h3>
+                <span>+91 8804764407</span>
+              </li>
+              <li>
+                <h3 class="item-title"><i class="fas fa-envelope"></i>Email Address</h3>
+                <span><a href="mailto:shashi290396@gmail.com">shashi290396@gmail.com</a></span>
+              </li>
+              <li>
+                <h3 class="item-title"><i class="fas fa-map-marker-alt"></i>Address</h3>
+                <span>Darbhanga, Bihar.</span>
+              </li>
+            </ul>
+          </div>
+          <div class="contact-right">
+            <p>I'm always open to discuss <br><span>design work or partnerships.
+           </span> </p>
+           <form action="" class="contact-form">
+            <div class="first-row">
+              <input type="text" placeholder="Name">
+            </div>
+            <div class="second-row">
+              <input type="text" placeholder="Email">
+              <input type="text" placeholder="Subject">
+            </div>
+            <div class="third-row">
+              <textarea name="message" id=""  rows="7" placeholder="Message"></textarea>
+            </div>
+            <button class="btn" type="submit">Send Message <i class="fas fa-paper-plane"></i></button>
+           </form>
+          </div>
+        </div>
+      </div>
+     </section>
+    <!--=======Footer=======-->
+        <footer>
+          <div class="footer-container">
+            <div class="about group">
+              <h2>Shashi</h2> 
+              <p>Full Stack Developer</p>
+              <a href="#about">About Me</a>
+          </div>
+          <div class="hr"></div>
+          <div class="info group">
+            <h3>More</h3>
+            <ul>
+              <li><a href="#skills">Skills</a></li>
+              <!-- <li><a href="#work">Experience</a></li> -->
+              <li><a href="#portfolio">Projects</a></li>
+              <li><a href="#contact">Contact</a></li>
+            </ul>
+          </div>
+          <div class="hr"></div>
+          <div class="follow group">
+            <h3>Follow</h3>
+            <ul>
+              <li><a href="https://github.com/shashi1049" target="_blank"><i class="fa-brands fa-github"></i></a></li>
+              <li><a href="https://www.linkedin.com/in/shashi1049/" target="_blank"><i class="fa-brands fa-linkedin-in"></i></a></li>
+              
+            </ul>
+          </div>
+        </div>
+        
+        </footer>
+
+
+    <!--=======External scripts=======-->
+    <script src="js/swiper-bundle.min.js"></script>
+    <script src="js/main.js"></script>
   </body>
 </html>
-<script src="script.js"></script>
-<!-- Include the library. -->
-<script src="https://unpkg.com/github-calendar@latest/dist/github-calendar.min.js"></script>
+<script
+  src="https://unpkg.com/github-calendar@latest/dist/github-calendar.min.js"
+></script>
 <script>
   GitHubCalendar(".calendar", "shashi1049");
   // or enable responsive functionality
   GitHubCalendar(".calendar", "shashi1049", { responsive: true });
 </script>
+
