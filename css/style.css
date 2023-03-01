@@ -765,7 +765,7 @@ footer{
   flex-direction: column;
   background: var(--second-color);
   width: 100%;
-  margin-top: 50px;
+  margin-top: 20px;
   padding: 3rem 2rem;
   color: #fff;
 }
@@ -816,12 +816,12 @@ footer a{
 }
 
 .footer-container .info a{
-  margin: 20px;
+  margin: 10px;
 }
 
 .footer-container .follow a{
   font-size: 1.5em;
-  margin: 20px;
+  margin: 10px;
 }
 
 
@@ -976,7 +976,7 @@ footer a{
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    margin-bottom: 50px;
+    margin-bottom: 30px;
   }
   
   .footer-container .info ul{
@@ -1016,25 +1016,46 @@ footer a{
   /*=======Home section=======*/
 
   .home .home-container{
+    /* display: grid; */
     display: grid;
+    width: 100%;
+    row-gap: 20px;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    
+  }
+  .home-container.info.btn{
+    
+    align-items: center;
+
   }
     
   .home-container .home-img{
-    position: absolute;
+    /* position: absolute; */
+    
   }
 
   .home-container .home-img img{
-    width: 65%;
-    transform: translate(80px, -180px);
+    /* width: 65%;
+    transform: translate(80px, -180px); */
+    
+
+    min-width: 0;
+    width: 100%;
+    
   }
 
   .home .home-container .info{
-    font-size: 0.8rem;
+    /* font-size: 0.8rem; */
+    min-width: 0;
+    width: 100%;
     
   }
 
   .media-icons{
-    margin-bottom: 80px;
+    margin-bottom: 30px;
+    
   }
 
 
