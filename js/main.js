@@ -28,28 +28,7 @@ modalCloseBtn.forEach((modalCloseBtn) => {
   });
 });
 
-//Our clients - Swiper
-// var swiper = new Swiper(".client-swiper", {
-//     slidesPerView: 1,
-//     spaceBetween: 30,
-//     loop: true,
-//     pagination: {
-//       el: ".swiper-pagination",
-//       clickable: true,
-//     },
-//     navigation: {
-//       nextEl: ".swiper-button-next",
-//       prevEl: ".swiper-button-prev",
-//     },
-//   });
 
-//Website dark/light theme
-
-//Scroll to top button
-
-//Navigation menu items active on page scroll
-
-//Responsive navigation menu toggle
 const menuBtn = document.querySelector(".nav-menu-btn");
 const closeBtn = document.querySelector(".nav-close-btn");
 const navigation = document.querySelector(".navigation");
@@ -69,9 +48,4 @@ navItem.forEach((navItem) => {
   });
 });
 
-//Scroll reveal animations
-//Common reveal options to create reveal animations
 
-//Target elements, and specify options to create reveal animations
-
-// git tags
